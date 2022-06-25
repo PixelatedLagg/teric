@@ -1,0 +1,8 @@
+Database: Stores 
+
+
+
+
+
+
+Building cmake without current cmake dir:       cmake . -G "MinGW Makefiles"
