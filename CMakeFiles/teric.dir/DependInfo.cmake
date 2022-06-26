@@ -14,7 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/Michi/OneDrive/Desktop/teric/src/main.cpp" "CMakeFiles/teric.dir/src/main.cpp.obj" "gcc" "CMakeFiles/teric.dir/src/main.cpp.obj.d"
   "C:/Users/Michi/OneDrive/Desktop/teric/src/message.cpp" "CMakeFiles/teric.dir/src/message.cpp.obj" "gcc" "CMakeFiles/teric.dir/src/message.cpp.obj.d"
   "C:/Users/Michi/OneDrive/Desktop/teric/src/networking.cpp" "CMakeFiles/teric.dir/src/networking.cpp.obj" "gcc" "CMakeFiles/teric.dir/src/networking.cpp.obj.d"
-  "C:/Users/Michi/OneDrive/Desktop/teric/src/server.cpp" "CMakeFiles/teric.dir/src/server.cpp.obj" "gcc" "CMakeFiles/teric.dir/src/server.cpp.obj.d"
+  "C:/Users/Michi/OneDrive/Desktop/teric/src/user.cpp" "CMakeFiles/teric.dir/src/user.cpp.obj" "gcc" "CMakeFiles/teric.dir/src/user.cpp.obj.d"
   )
 
 # Targets to which this target links.

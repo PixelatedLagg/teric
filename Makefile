@@ -272,29 +272,29 @@ src/networking.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\teric.dir\build.make CMakeFiles/teric.dir/src/networking.cpp.s
 .PHONY : src/networking.cpp.s
 
-src/server.obj: src/server.cpp.obj
-.PHONY : src/server.obj
+src/user.obj: src/user.cpp.obj
+.PHONY : src/user.obj
 
 # target to build an object file
-src/server.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\teric.dir\build.make CMakeFiles/teric.dir/src/server.cpp.obj
-.PHONY : src/server.cpp.obj
+src/user.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\teric.dir\build.make CMakeFiles/teric.dir/src/user.cpp.obj
+.PHONY : src/user.cpp.obj
 
-src/server.i: src/server.cpp.i
-.PHONY : src/server.i
+src/user.i: src/user.cpp.i
+.PHONY : src/user.i
 
 # target to preprocess a source file
-src/server.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\teric.dir\build.make CMakeFiles/teric.dir/src/server.cpp.i
-.PHONY : src/server.cpp.i
+src/user.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\teric.dir\build.make CMakeFiles/teric.dir/src/user.cpp.i
+.PHONY : src/user.cpp.i
 
-src/server.s: src/server.cpp.s
-.PHONY : src/server.s
+src/user.s: src/user.cpp.s
+.PHONY : src/user.s
 
 # target to generate assembly for a file
-src/server.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\teric.dir\build.make CMakeFiles/teric.dir/src/server.cpp.s
-.PHONY : src/server.cpp.s
+src/user.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\teric.dir\build.make CMakeFiles/teric.dir/src/user.cpp.s
+.PHONY : src/user.cpp.s
 
 # Help Target
 help:
@@ -323,9 +323,9 @@ help:
 	@echo ... src/networking.obj
 	@echo ... src/networking.i
 	@echo ... src/networking.s
-	@echo ... src/server.obj
-	@echo ... src/server.i
-	@echo ... src/server.s
+	@echo ... src/user.obj
+	@echo ... src/user.i
+	@echo ... src/user.s
 .PHONY : help
 
 

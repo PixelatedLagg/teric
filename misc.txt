@@ -1,8 +1,5 @@
-Database: Stores 
-
-
-
-
+23:45 Pixel: aids
+Alefir: howdy y'all
 
 
 Building cmake without current cmake dir:       cmake . -G "MinGW Makefiles"

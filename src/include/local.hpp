@@ -1,10 +1,16 @@
 #ifndef LOCAL_H
 #define LOCAL_H
 
-#include "include/user.hpp"
+#include "user.hpp"
+#include "guild.hpp"
+#include <string>
 
-user CurrentUser;
-guild CurrentGuild;
+class local
+{
+    public:
+        local(std::string username);
+        static std::string Username;
+};
 bool InitialLogin();
 
 #endif

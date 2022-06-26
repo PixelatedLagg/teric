@@ -158,20 +158,20 @@ CMakeFiles/teric.dir/src/networking.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/teric.dir/src/networking.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Michi\OneDrive\Desktop\teric\src\networking.cpp -o CMakeFiles\teric.dir\src\networking.cpp.s
 
-CMakeFiles/teric.dir/src/server.cpp.obj: CMakeFiles/teric.dir/flags.make
-CMakeFiles/teric.dir/src/server.cpp.obj: CMakeFiles/teric.dir/includes_CXX.rsp
-CMakeFiles/teric.dir/src/server.cpp.obj: src/server.cpp
-CMakeFiles/teric.dir/src/server.cpp.obj: CMakeFiles/teric.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Michi\OneDrive\Desktop\teric\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/teric.dir/src/server.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/teric.dir/src/server.cpp.obj -MF CMakeFiles\teric.dir\src\server.cpp.obj.d -o CMakeFiles\teric.dir\src\server.cpp.obj -c C:\Users\Michi\OneDrive\Desktop\teric\src\server.cpp
+CMakeFiles/teric.dir/src/user.cpp.obj: CMakeFiles/teric.dir/flags.make
+CMakeFiles/teric.dir/src/user.cpp.obj: CMakeFiles/teric.dir/includes_CXX.rsp
+CMakeFiles/teric.dir/src/user.cpp.obj: src/user.cpp
+CMakeFiles/teric.dir/src/user.cpp.obj: CMakeFiles/teric.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Michi\OneDrive\Desktop\teric\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/teric.dir/src/user.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/teric.dir/src/user.cpp.obj -MF CMakeFiles\teric.dir\src\user.cpp.obj.d -o CMakeFiles\teric.dir\src\user.cpp.obj -c C:\Users\Michi\OneDrive\Desktop\teric\src\user.cpp
 
-CMakeFiles/teric.dir/src/server.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/teric.dir/src/server.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Michi\OneDrive\Desktop\teric\src\server.cpp > CMakeFiles\teric.dir\src\server.cpp.i
+CMakeFiles/teric.dir/src/user.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/teric.dir/src/user.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Michi\OneDrive\Desktop\teric\src\user.cpp > CMakeFiles\teric.dir\src\user.cpp.i
 
-CMakeFiles/teric.dir/src/server.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/teric.dir/src/server.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Michi\OneDrive\Desktop\teric\src\server.cpp -o CMakeFiles\teric.dir\src\server.cpp.s
+CMakeFiles/teric.dir/src/user.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/teric.dir/src/user.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Michi\OneDrive\Desktop\teric\src\user.cpp -o CMakeFiles\teric.dir\src\user.cpp.s
 
 # Object files for target teric
 teric_OBJECTS = \
@@ -181,7 +181,7 @@ teric_OBJECTS = \
 "CMakeFiles/teric.dir/src/main.cpp.obj" \
 "CMakeFiles/teric.dir/src/message.cpp.obj" \
 "CMakeFiles/teric.dir/src/networking.cpp.obj" \
-"CMakeFiles/teric.dir/src/server.cpp.obj"
+"CMakeFiles/teric.dir/src/user.cpp.obj"
 
 # External object files for target teric
 teric_EXTERNAL_OBJECTS =
@@ -192,7 +192,7 @@ teric.exe: CMakeFiles/teric.dir/src/local.cpp.obj
 teric.exe: CMakeFiles/teric.dir/src/main.cpp.obj
 teric.exe: CMakeFiles/teric.dir/src/message.cpp.obj
 teric.exe: CMakeFiles/teric.dir/src/networking.cpp.obj
-teric.exe: CMakeFiles/teric.dir/src/server.cpp.obj
+teric.exe: CMakeFiles/teric.dir/src/user.cpp.obj
 teric.exe: CMakeFiles/teric.dir/build.make
 teric.exe: CMakeFiles/teric.dir/linklibs.rsp
 teric.exe: CMakeFiles/teric.dir/objects1.rsp

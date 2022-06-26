@@ -3,6 +3,6 @@
 
 #include <string>
 
-void PrintColored(std::string color, std::string text);
+void PrintColored(int color, std::string text);
 
 #endif

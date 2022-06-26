@@ -11,6 +11,7 @@ class user
         std::string Password;
         int Tag;
         unsigned long ID;
+        int Color;
 };
 
 #endif
