@@ -11,30 +11,33 @@
 time_t* globalTime = new time_t();
 struct tm* timeStamp = new tm();
 
-void PrintColored(int color, std::string text)
+void PrintColored(int color, std::string text, std::string after = "")
 {
     switch (color)
     {
         case 1: //red
-            std::cout << dye::red(text);
+            std::cout << dye::red(text) << after;
             break;
         case 2: //yellow
-            std::cout << dye::yellow(text);
+            std::cout << dye::yellow(text) << after;
             break;
         case 3: //green
-            std::cout << dye::green(text);
+            std::cout << dye::green(text) << after;
             break;
         case 4: //aqua
-            std::cout << dye::aqua(text);
+            std::cout << dye::aqua(text) << after;
             break;
         case 5: //blue
-            std::cout << dye::blue(text);
+            std::cout << dye::blue(text) << after;
             break;
         case 6: //purple
-            std::cout << dye::purple(text);
+            std::cout << dye::purple(text) << after;
             break;
         case 7: //black on gray
-            std::cout << dye::black_on_grey(text);
+            std::cout << dye::black_on_grey(text) << after;
+            break;
+        case 8: //gray
+            std::cout << dye::gray(text) << after;
             break;
     }
 }
@@ -68,11 +71,11 @@ void PrintTime()
 {
     if (timeStamp->tm_min < 10)
     {
-        std::cout << dye::grey(std::to_string(timeStamp->tm_hour) + ":0" + std::to_string(timeStamp->tm_min) + ' ');
+        PrintColored(8, std::to_string(timeStamp->tm_hour) + ":0" + std::to_string(timeStamp->tm_min) + ' ');
     }
     else
     {
-        std::cout << dye::grey(std::to_string(timeStamp->tm_hour) + ':' + std::to_string(timeStamp->tm_min) + ' ');
+        PrintColored(8, std::to_string(timeStamp->tm_hour) + ':' + std::to_string(timeStamp->tm_min) + ' ');
     }
 }
 void TimeStamp()
@@ -96,7 +99,7 @@ int main()
         TimeStamp();
         std::cout << "Do you already have an account? [y/n]\n";
         TimeStamp();
-        std::cout << dye::blue(l.Username) << ": ";
+        PrintColored(5,l.Username,": ");
         std::string input;
         std::cin >> input;
         while (true)
@@ -104,7 +107,8 @@ int main()
             if (input != "y" && input != "n")
             {
                 TimeStamp();
-                std::cout << dye::red("Invalid input.\n") << dye::blue(l.Username) << ": ";
+                PrintColored(1,"Invalid input.\n");
+                PrintColored(5,l.Username, ": ");
                 std::cin >> input;
             }
             else
@@ -127,10 +131,12 @@ int main()
                 if (!TryLogin(username, password))
                 {
                     TimeStamp();
-                    std::cout << dye::red("Incorrect username and/or password.") << "\nEnter your full username. Example: CoolGuy#1849\n" << dye::blue(l.Username) << ": ";
+                    PrintColored(1,"Incorrect username and/or password.", "\nEnter your full username. Example: CoolGuy#1849\n");
+                    PrintColored(5,l.Username, ": ");
                     std::cin >> username;
                     TimeStamp();
-                    std::cout << "Enter your password.\n" << dye::blue(l.Username) << ": ";
+                    std::cout << "Enter your password.\n";
+                    PrintColored(5,l.Username, ": ");
                     std::cin >> password;
                 }
                 else
@@ -147,27 +153,35 @@ int main()
             std::string tag;
             std::string password;
             TimeStamp();
-            std::cout << "Create your username.\n" << dye::blue(l.Username) << ": ";
+            std::cout << "Create your username.\n";
+            PrintColored(5,l.Username, ": ");
             std::cin >> username;
             TimeStamp();
-            std::cout << "Create your tag. " << dye::grey("Example: 8039\n") << dye::blue(l.Username) << ": ";
+            std::cout << "Create your tag. ";
+            PrintColored(8,"Example: 8039\n");
+            PrintColored(5,l.Username, ": ");
             std::cin >> tag;
             while (true)
             {
                 if (tag.size() != 4 || !IsValidInt(tag))
                 {
                     TimeStamp();
-                    std::cout << dye::red("Invalid tag.") << "\nCreate your tag. " << dye::grey("Example: 8039\n") << dye::blue(l.Username) << ": ";
+                    PrintColored(1,"Invalid tag.", "\nCreate your tag. ");
+                    PrintColored(8,"Example: 8039\n");
+                    PrintColored(5,l.Username, ": ");
                     std::cin >> tag;
                     continue;
                 }
                 if (UsernameIsTaken(username + "#" + tag))
                 {
                     TimeStamp();
-                    std::cout << dye::red("Sorry, that username and tag combination is taken.") << "\nCreate your username.\n" << dye::blue(l.Username) << ": ";
+                    PrintColored(1,"Sorry, that username and tag combination is taken.","\nCreate your username.\n");
+                    PrintColored(5,l.Username,": ");
                     std::cin >> username;
                     TimeStamp();
-                    std::cout << "Create your tag. " << dye::grey("Example: 8039\n") << dye::blue(l.Username) << ": ";
+                    std::cout << "Create your tag. ";
+                    PrintColored(8,"Example: 8039\n");
+                    PrintColored(5,l.Username,": ");
                     std::cin >> tag;
                 }
                 else
@@ -176,7 +190,8 @@ int main()
                 }
             }
             TimeStamp();
-            std::cout << "Create a nice and strong password.\n" << dye::blue(l.Username) << ": ";
+            std::cout << "Create a nice and strong password.\n";
+            PrintColored(5,l.Username,": ");
             std::cin >> password;
             CreateUser(username, password);
             l.Username = username;
@@ -186,18 +201,18 @@ int main()
     else
     {
         TimeStamp();
-        std::cout << dye::grey("Running Teric v0.1");
+        PrintColored(8,"Running Teric v0.1");
         std::string input;
         while (true)
         {
-            std::cout << dye::blue(l.Username) << ": ";
+            PrintColored(5,l.Username,": ";
             std::cin >> input;
             if (input[0] == '.')
             {
                 if (input == ".online")
                 {
                     TimeStamp();
-                    std::cout << dye::grey("Online in this channel:");
+                    PrintColored(5,"Online in this channel:");
                 }
             }
             else
