@@ -128,30 +128,6 @@ teric/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\teric.dir\build.make CMakeFiles/teric.dir/build
 .PHONY : teric/fast
 
-src/color.obj: src/color.cpp.obj
-.PHONY : src/color.obj
-
-# target to build an object file
-src/color.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\teric.dir\build.make CMakeFiles/teric.dir/src/color.cpp.obj
-.PHONY : src/color.cpp.obj
-
-src/color.i: src/color.cpp.i
-.PHONY : src/color.i
-
-# target to preprocess a source file
-src/color.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\teric.dir\build.make CMakeFiles/teric.dir/src/color.cpp.i
-.PHONY : src/color.cpp.i
-
-src/color.s: src/color.cpp.s
-.PHONY : src/color.s
-
-# target to generate assembly for a file
-src/color.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\teric.dir\build.make CMakeFiles/teric.dir/src/color.cpp.s
-.PHONY : src/color.cpp.s
-
 src/guild.obj: src/guild.cpp.obj
 .PHONY : src/guild.obj
 
@@ -305,9 +281,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... teric
-	@echo ... src/color.obj
-	@echo ... src/color.i
-	@echo ... src/color.s
 	@echo ... src/guild.obj
 	@echo ... src/guild.i
 	@echo ... src/guild.s

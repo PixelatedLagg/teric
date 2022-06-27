@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/teric.dir/src/color.cpp.obj"
-  "CMakeFiles/teric.dir/src/color.cpp.obj.d"
   "CMakeFiles/teric.dir/src/guild.cpp.obj"
   "CMakeFiles/teric.dir/src/guild.cpp.obj.d"
   "CMakeFiles/teric.dir/src/local.cpp.obj"

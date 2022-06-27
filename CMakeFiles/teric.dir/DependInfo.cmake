@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Michi/OneDrive/Desktop/teric/src/color.cpp" "CMakeFiles/teric.dir/src/color.cpp.obj" "gcc" "CMakeFiles/teric.dir/src/color.cpp.obj.d"
   "C:/Users/Michi/OneDrive/Desktop/teric/src/guild.cpp" "CMakeFiles/teric.dir/src/guild.cpp.obj" "gcc" "CMakeFiles/teric.dir/src/guild.cpp.obj.d"
   "C:/Users/Michi/OneDrive/Desktop/teric/src/local.cpp" "CMakeFiles/teric.dir/src/local.cpp.obj" "gcc" "CMakeFiles/teric.dir/src/local.cpp.obj.d"
   "C:/Users/Michi/OneDrive/Desktop/teric/src/main.cpp" "CMakeFiles/teric.dir/src/main.cpp.obj" "gcc" "CMakeFiles/teric.dir/src/main.cpp.obj.d"

@@ -1,5 +1,5 @@
-#ifndef COLORC_H
-#define COLORC_H
+#ifndef COLOR_HPP
+#define COLOR_HPP
 
 #include <algorithm>
 #include <iostream>

@@ -9,7 +9,7 @@ class local
 {
     public:
         local(std::string username);
-        static std::string Username;
+        std::string Username;
 };
 bool InitialLogin();
 

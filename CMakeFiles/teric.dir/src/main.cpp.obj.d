@@ -100,41 +100,33 @@ CMakeFiles/teric.dir/src/main.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ostream.tcc \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\istream \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\istream.tcc \
- C:\Users\Michi\OneDrive\Desktop\teric\src\include/user.hpp \
- C:\Users\Michi\OneDrive\Desktop\teric\src\include/local.hpp \
- C:\Users\Michi\OneDrive\Desktop\teric\src\include/user.hpp \
- C:\Users\Michi\OneDrive\Desktop\teric\src\include/guild.hpp \
- C:\Users\Michi\OneDrive\Desktop\teric\src\include/networking.hpp \
- C:\Users\Michi\OneDrive\Desktop\teric\src\include/message.hpp \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_construct.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_uninitialized.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_bvector.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\vector.tcc \
- C:\Users\Michi\OneDrive\Desktop\teric\src\include/color.hpp \
- C:\Users\Michi\OneDrive\Desktop\teric\src\include/colorconsole.hpp \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ctime c:\mingw\include\time.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\thread \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\chrono \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ratio \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\limits \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\parse_numbers.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\typeinfo \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\tuple \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\utility \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_relops.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\algorithmfwd.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_heap.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_tempbuf.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\uniform_int_dist.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\limits \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\list \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_list.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\allocated_ptr.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\aligned_buffer.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\list.tcc \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\map \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_tree.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_map.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\tuple \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\array \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\uses_allocator.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_multimap.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_construct.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_uninitialized.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_tempbuf.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_raw_storage_iter.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\concurrence.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr_base.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\allocated_ptr.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\aligned_buffer.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr_atomic.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\atomic_base.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\backward\auto_ptr.h \
  c:\mingw\include\windows.h c:\mingw\include\windef.h \
  c:\mingw\include\winnt.h c:\mingw\include\winerror.h \
  c:\mingw\include\string.h c:\mingw\include\strings.h \
@@ -164,4 +156,27 @@ CMakeFiles/teric.dir/src/main.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\stdlib.h \
  c:\mingw\include\objidl.h c:\mingw\include\cguid.h \
  c:\mingw\include\olectlid.h c:\mingw\include\oleauto.h \
- c:\mingw\include\oaidl.h c:\mingw\include\oleidl.h
+ c:\mingw\include\oaidl.h c:\mingw\include\oleidl.h \
+ C:\Users\Michi\OneDrive\Desktop\teric\src\include/user.hpp \
+ C:\Users\Michi\OneDrive\Desktop\teric\src\include/local.hpp \
+ C:\Users\Michi\OneDrive\Desktop\teric\src\include/user.hpp \
+ C:\Users\Michi\OneDrive\Desktop\teric\src\include/guild.hpp \
+ C:\Users\Michi\OneDrive\Desktop\teric\src\include/networking.hpp \
+ C:\Users\Michi\OneDrive\Desktop\teric\src\include/message.hpp \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_bvector.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\vector.tcc \
+ C:\Users\Michi\OneDrive\Desktop\teric\src\include/colorconsole.hpp \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\algorithmfwd.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_heap.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\uniform_int_dist.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\list \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_list.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\list.tcc \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\map \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_tree.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_map.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_multimap.h

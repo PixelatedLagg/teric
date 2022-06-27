@@ -1,7 +1,7 @@
 #include "include/networking.hpp"
 #include <string>
 
-bool UsernameIsTaken(std::string username, int tag)
+bool UsernameIsTaken(std::string username)
 {
     return false;
 }

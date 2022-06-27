@@ -6,7 +6,7 @@
 #include <vector>
 #include <string>
 
-bool UsernameIsTaken(std::string username, int tag);
+bool UsernameIsTaken(std::string username);
 bool TryLogin(std::string username, std::string password);
 void CreateUser(std::string username, std::string password);
 void Login(std::string username, std::string password);
@@ -19,5 +19,7 @@ void SendMessageToChannel();
 void SendMessageToUser();
 void SendFriendRequest();
 void DeleteUser();
+
+//std::string[] UsersInChannel();
 
 #endif
