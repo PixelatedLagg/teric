@@ -8,8 +8,9 @@
 #include "include/networking.hpp"
 #include "include/colorconsole.hpp"
 
-time_t* globalTime = new time_t();
-struct tm* timeStamp = new tm();
+time_t* timeseed = new time_t();
+int* timestamp = new int();
+struct tm* temp = new tm();
 
 void PrintColored(int color, std::string text)
 {
@@ -48,46 +49,38 @@ bool IsValidInt(const std::string& s)
     strtol(s.c_str(), &p, 10);
     return (*p == 0);
 }
-bool TimeIsGreater(tm* tm1, tm* tm2)
-{
-    if (tm1->tm_min > tm2->tm_min)
-    {
-        return true;
-    }
-    else if (tm1->tm_hour > tm2->tm_hour)
-    {
-        return true;
-    }
-    else if (tm1->tm_yday > tm2->tm_yday)
-    {
-        return true;
-    }
-    return false;
-}
+
 void PrintTime()
 {
-    if (timeStamp->tm_min < 10)
+    if (temp->tm_min < 10)
     {
-        std::cout << dye::grey(std::to_string(timeStamp->tm_hour) + ":0" + std::to_string(timeStamp->tm_min) + ' ');
+        std::cout << dye::grey(std::to_string(temp->tm_hour) + ":0" + std::to_string(temp->tm_min) + ' ');
     }
     else
     {
-        std::cout << dye::grey(std::to_string(timeStamp->tm_hour) + ':' + std::to_string(timeStamp->tm_min) + ' ');
+        std::cout << dye::grey(std::to_string(temp->tm_hour) + ':' + std::to_string(temp->tm_min) + ' ');
     }
 }
 void TimeStamp()
 {
-    time(globalTime);
-    if (TimeIsGreater(localtime(globalTime), timeStamp))
+    time(timeseed);
+    if (time(0) / 60 > *timestamp)
     {
-        timeStamp = localtime(globalTime);
+        *timestamp = time(0) / 60;
+        temp = localtime(timeseed);
         PrintTime();
     }
 }
+void InputReplace(std::string input, std::string username)
+{
+    TimeStamp();
+    std::cout << "\x1b[1A\x1b[2K" << dye::blue(username) << ": " << input << "\n";
+}
 int main()
 {
-    time(globalTime);
-    timeStamp = localtime(globalTime);
+    time(timeseed);
+    *timestamp = time(0) / 60;
+    temp = localtime(timeseed);
     local l("user");
     PrintTime();
     if (InitialLogin())
@@ -139,7 +132,7 @@ int main()
                 }
             }
             Login(username, password);
-            std::cout.flush();
+            std::cout << "\x1B[2J\x1B[H";
         }
         else
         {
@@ -180,30 +173,32 @@ int main()
             std::cin >> password;
             CreateUser(username, password);
             l.Username = username;
-            std::cout.flush();
+            std::cout << "\x1B[2J\x1B[H";
         }
     }
-    else
+    TimeStamp();
+    std::cout << dye::grey("Running Teric v0.1\n");
+    std::string input;
+    while (true)
     {
-        TimeStamp();
-        std::cout << dye::grey("Running Teric v0.1");
-        std::string input;
-        while (true)
+        std::cout << dye::blue(l.Username) << ": ";
+        std::cin >> input;
+        if (input == "")
         {
-            std::cout << dye::blue(l.Username) << ": ";
-            std::cin >> input;
-            if (input[0] == '.')
+            continue;
+        }
+        InputReplace(input, l.Username);
+        if (input[0] == '.')
+        {
+            if (input == ".online")
             {
-                if (input == ".online")
-                {
-                    TimeStamp();
-                    std::cout << dye::grey("Online in this channel:");
-                }
+                TimeStamp();
+                std::cout << dye::grey("Online in this channel:");
             }
-            else
-            {
+        }
+        else
+        {
 
-            }
         }
     }
 }

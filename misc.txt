@@ -3,3 +3,6 @@ Alefir: howdy y'all
 
 
 Building cmake without current cmake dir:       cmake . -G "MinGW Makefiles"
+
+todo:
+-add cmd.exe compatibility for ANSI escape-required tasks
