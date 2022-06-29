@@ -68,11 +68,26 @@ include CMakeFiles/teric.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/teric.dir/flags.make
 
+CMakeFiles/teric.dir/src/context.cpp.obj: CMakeFiles/teric.dir/flags.make
+CMakeFiles/teric.dir/src/context.cpp.obj: CMakeFiles/teric.dir/includes_CXX.rsp
+CMakeFiles/teric.dir/src/context.cpp.obj: src/context.cpp
+CMakeFiles/teric.dir/src/context.cpp.obj: CMakeFiles/teric.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Michi\OneDrive\Desktop\teric\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/teric.dir/src/context.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/teric.dir/src/context.cpp.obj -MF CMakeFiles\teric.dir\src\context.cpp.obj.d -o CMakeFiles\teric.dir\src\context.cpp.obj -c C:\Users\Michi\OneDrive\Desktop\teric\src\context.cpp
+
+CMakeFiles/teric.dir/src/context.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/teric.dir/src/context.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Michi\OneDrive\Desktop\teric\src\context.cpp > CMakeFiles\teric.dir\src\context.cpp.i
+
+CMakeFiles/teric.dir/src/context.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/teric.dir/src/context.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Michi\OneDrive\Desktop\teric\src\context.cpp -o CMakeFiles\teric.dir\src\context.cpp.s
+
 CMakeFiles/teric.dir/src/guild.cpp.obj: CMakeFiles/teric.dir/flags.make
 CMakeFiles/teric.dir/src/guild.cpp.obj: CMakeFiles/teric.dir/includes_CXX.rsp
 CMakeFiles/teric.dir/src/guild.cpp.obj: src/guild.cpp
 CMakeFiles/teric.dir/src/guild.cpp.obj: CMakeFiles/teric.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Michi\OneDrive\Desktop\teric\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/teric.dir/src/guild.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Michi\OneDrive\Desktop\teric\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/teric.dir/src/guild.cpp.obj"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/teric.dir/src/guild.cpp.obj -MF CMakeFiles\teric.dir\src\guild.cpp.obj.d -o CMakeFiles\teric.dir\src\guild.cpp.obj -c C:\Users\Michi\OneDrive\Desktop\teric\src\guild.cpp
 
 CMakeFiles/teric.dir/src/guild.cpp.i: cmake_force
@@ -82,21 +97,6 @@ CMakeFiles/teric.dir/src/guild.cpp.i: cmake_force
 CMakeFiles/teric.dir/src/guild.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/teric.dir/src/guild.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Michi\OneDrive\Desktop\teric\src\guild.cpp -o CMakeFiles\teric.dir\src\guild.cpp.s
-
-CMakeFiles/teric.dir/src/local.cpp.obj: CMakeFiles/teric.dir/flags.make
-CMakeFiles/teric.dir/src/local.cpp.obj: CMakeFiles/teric.dir/includes_CXX.rsp
-CMakeFiles/teric.dir/src/local.cpp.obj: src/local.cpp
-CMakeFiles/teric.dir/src/local.cpp.obj: CMakeFiles/teric.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Michi\OneDrive\Desktop\teric\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/teric.dir/src/local.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/teric.dir/src/local.cpp.obj -MF CMakeFiles\teric.dir\src\local.cpp.obj.d -o CMakeFiles\teric.dir\src\local.cpp.obj -c C:\Users\Michi\OneDrive\Desktop\teric\src\local.cpp
-
-CMakeFiles/teric.dir/src/local.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/teric.dir/src/local.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Michi\OneDrive\Desktop\teric\src\local.cpp > CMakeFiles\teric.dir\src\local.cpp.i
-
-CMakeFiles/teric.dir/src/local.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/teric.dir/src/local.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Michi\OneDrive\Desktop\teric\src\local.cpp -o CMakeFiles\teric.dir\src\local.cpp.s
 
 CMakeFiles/teric.dir/src/main.cpp.obj: CMakeFiles/teric.dir/flags.make
 CMakeFiles/teric.dir/src/main.cpp.obj: CMakeFiles/teric.dir/includes_CXX.rsp
@@ -160,8 +160,8 @@ CMakeFiles/teric.dir/src/user.cpp.s: cmake_force
 
 # Object files for target teric
 teric_OBJECTS = \
+"CMakeFiles/teric.dir/src/context.cpp.obj" \
 "CMakeFiles/teric.dir/src/guild.cpp.obj" \
-"CMakeFiles/teric.dir/src/local.cpp.obj" \
 "CMakeFiles/teric.dir/src/main.cpp.obj" \
 "CMakeFiles/teric.dir/src/message.cpp.obj" \
 "CMakeFiles/teric.dir/src/networking.cpp.obj" \
@@ -170,8 +170,8 @@ teric_OBJECTS = \
 # External object files for target teric
 teric_EXTERNAL_OBJECTS =
 
+teric.exe: CMakeFiles/teric.dir/src/context.cpp.obj
 teric.exe: CMakeFiles/teric.dir/src/guild.cpp.obj
-teric.exe: CMakeFiles/teric.dir/src/local.cpp.obj
 teric.exe: CMakeFiles/teric.dir/src/main.cpp.obj
 teric.exe: CMakeFiles/teric.dir/src/message.cpp.obj
 teric.exe: CMakeFiles/teric.dir/src/networking.cpp.obj

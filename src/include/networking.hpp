@@ -15,7 +15,7 @@ void LoginChannel();
 void LogoffChannel();
 void JoinGuild();
 void LeaveGuild();
-void SendMessageToChannel();
+void SendMessageToChannel(long channelid, long guildid, std::string message, std::string username);
 void SendMessageToUser();
 void SendFriendRequest();
 void DeleteUser();

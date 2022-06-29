@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Users/Michi/OneDrive/Desktop/teric/src/context.cpp" "CMakeFiles/teric.dir/src/context.cpp.obj" "gcc" "CMakeFiles/teric.dir/src/context.cpp.obj.d"
   "C:/Users/Michi/OneDrive/Desktop/teric/src/guild.cpp" "CMakeFiles/teric.dir/src/guild.cpp.obj" "gcc" "CMakeFiles/teric.dir/src/guild.cpp.obj.d"
-  "C:/Users/Michi/OneDrive/Desktop/teric/src/local.cpp" "CMakeFiles/teric.dir/src/local.cpp.obj" "gcc" "CMakeFiles/teric.dir/src/local.cpp.obj.d"
   "C:/Users/Michi/OneDrive/Desktop/teric/src/main.cpp" "CMakeFiles/teric.dir/src/main.cpp.obj" "gcc" "CMakeFiles/teric.dir/src/main.cpp.obj.d"
   "C:/Users/Michi/OneDrive/Desktop/teric/src/message.cpp" "CMakeFiles/teric.dir/src/message.cpp.obj" "gcc" "CMakeFiles/teric.dir/src/message.cpp.obj.d"
   "C:/Users/Michi/OneDrive/Desktop/teric/src/networking.cpp" "CMakeFiles/teric.dir/src/networking.cpp.obj" "gcc" "CMakeFiles/teric.dir/src/networking.cpp.obj.d"

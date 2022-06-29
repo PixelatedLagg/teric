@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/teric.dir/src/context.cpp.obj"
+  "CMakeFiles/teric.dir/src/context.cpp.obj.d"
   "CMakeFiles/teric.dir/src/guild.cpp.obj"
   "CMakeFiles/teric.dir/src/guild.cpp.obj.d"
-  "CMakeFiles/teric.dir/src/local.cpp.obj"
-  "CMakeFiles/teric.dir/src/local.cpp.obj.d"
   "CMakeFiles/teric.dir/src/main.cpp.obj"
   "CMakeFiles/teric.dir/src/main.cpp.obj.d"
   "CMakeFiles/teric.dir/src/message.cpp.obj"

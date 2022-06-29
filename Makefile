@@ -128,6 +128,30 @@ teric/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\teric.dir\build.make CMakeFiles/teric.dir/build
 .PHONY : teric/fast
 
+src/context.obj: src/context.cpp.obj
+.PHONY : src/context.obj
+
+# target to build an object file
+src/context.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\teric.dir\build.make CMakeFiles/teric.dir/src/context.cpp.obj
+.PHONY : src/context.cpp.obj
+
+src/context.i: src/context.cpp.i
+.PHONY : src/context.i
+
+# target to preprocess a source file
+src/context.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\teric.dir\build.make CMakeFiles/teric.dir/src/context.cpp.i
+.PHONY : src/context.cpp.i
+
+src/context.s: src/context.cpp.s
+.PHONY : src/context.s
+
+# target to generate assembly for a file
+src/context.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\teric.dir\build.make CMakeFiles/teric.dir/src/context.cpp.s
+.PHONY : src/context.cpp.s
+
 src/guild.obj: src/guild.cpp.obj
 .PHONY : src/guild.obj
 
@@ -151,30 +175,6 @@ src/guild.s: src/guild.cpp.s
 src/guild.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\teric.dir\build.make CMakeFiles/teric.dir/src/guild.cpp.s
 .PHONY : src/guild.cpp.s
-
-src/local.obj: src/local.cpp.obj
-.PHONY : src/local.obj
-
-# target to build an object file
-src/local.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\teric.dir\build.make CMakeFiles/teric.dir/src/local.cpp.obj
-.PHONY : src/local.cpp.obj
-
-src/local.i: src/local.cpp.i
-.PHONY : src/local.i
-
-# target to preprocess a source file
-src/local.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\teric.dir\build.make CMakeFiles/teric.dir/src/local.cpp.i
-.PHONY : src/local.cpp.i
-
-src/local.s: src/local.cpp.s
-.PHONY : src/local.s
-
-# target to generate assembly for a file
-src/local.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\teric.dir\build.make CMakeFiles/teric.dir/src/local.cpp.s
-.PHONY : src/local.cpp.s
 
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
@@ -281,12 +281,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... teric
+	@echo ... src/context.obj
+	@echo ... src/context.i
+	@echo ... src/context.s
 	@echo ... src/guild.obj
 	@echo ... src/guild.i
 	@echo ... src/guild.s
-	@echo ... src/local.obj
-	@echo ... src/local.i
-	@echo ... src/local.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
