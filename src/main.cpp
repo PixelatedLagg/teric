@@ -1,13 +1,36 @@
+#if defined(_WIN32) || defined(WIN32) || defined(__CYGWIN__) || defined(__MINGW32__) || defined(__BORLANDC__)
+#define WINDOWS
+#endif
 #include <iostream>
 #include <string>
 #include <ctime>
 #include <thread>
+#ifdef WINDOWS
 #include "windows.h"
+#endif
 #include "include/user.hpp"
 #include "include/context.hpp"
 #include "include/networking.hpp"
 #include "include/colorconsole.hpp"
 
+#ifdef WINDOWS
+HANDLE* consoleHandle = new HANDLE();
+void Clear()
+{
+    #ifdef WINDOWS
+    COORD topLeft = { 0, 0 };
+    HANDLE console = GetStdHandle(STD_OUTPUT_HANDLE);
+    CONSOLE_SCREEN_BUFFER_INFO screen;
+    DWORD written;
+    GetConsoleScreenBufferInfo(console, &screen);
+    FillConsoleOutputCharacterA(console, ' ', screen.dwSize.X * screen.dwSize.Y, topLeft, &written);
+    FillConsoleOutputAttribute(console, FOREGROUND_GREEN | FOREGROUND_RED | FOREGROUND_BLUE, screen.dwSize.X * screen.dwSize.Y, topLeft, &written);
+    SetConsoleCursorPosition(console, topLeft);
+    #else
+    std::cout << "\x1B[2J\x1B[H";
+    #endif
+}
+#endif
 time_t* timeseed = new time_t();
 int* timestamp = new int();
 struct tm* temp = new tm();
@@ -79,6 +102,10 @@ void InputReplace(std::string input, std::string username)
 }
 int main()
 {
+    #ifdef WINDOWS
+    system(" ");
+    *consoleHandle = GetStdHandle(STD_OUTPUT_HANDLE);
+    #endif
     time(timeseed);
     *timestamp = time(0) / 60;
     temp = localtime(timeseed);
@@ -133,7 +160,6 @@ int main()
                 }
             }
             Login(username, password);
-            std::cout << "\x1B[2J\x1B[H";
         }
         else
         {
@@ -174,8 +200,8 @@ int main()
             std::cin >> password;
             CreateUser(username, password);
             *c.Username = username;
-            std::cout << "\x1B[2J\x1B[H";
         }
+        Clear();
     }
     PrintTime();
     std::cout << dye::grey("Running Teric v0.1\n");
@@ -183,8 +209,13 @@ int main()
     while (true)
     {
         std::cout << dye::blue(*c.Username) << ": ";
-        std::cout << "aids!";
         std::getline(std::cin, input);
+        if (input.length() > 170)
+        {
+            TimeStamp();
+            std::cout << dye::red("Cannot have more than 170 characters in a message!\n");
+            continue;
+        }
         if (input != "")
         {
             InputReplace(input, *c.Username);
@@ -202,7 +233,7 @@ int main()
                 }
                 else if (input == ".clear")
                 {
-                    std::cout << "\x1B[2J\x1B[H";
+                    Clear();
                     PrintTime();
                     std::cout << dye::grey("Cleared the chat.\n");
                 }
@@ -210,11 +241,20 @@ int main()
                 {
                     return 0;
                 }
+                else
+                {
+                    TimeStamp();
+                    std::cout << dye::red("Command not found. Type '.help' for all commands.\n");
+                }
             }
             else
             {
-                std::cout << "\n";
+                //std::cout << "\n";
             }
+        }
+        else
+        {
+
         }
     }
 }
