@@ -17,7 +17,8 @@
 HANDLE* consoleHandle = new HANDLE();
 void Clear()
 {
-    #ifdef WINDOWS
+    std::cout << "\x1B[2J\x1B[H";
+    /*#ifdef WINDOWS
     COORD topLeft = { 0, 0 };
     HANDLE console = GetStdHandle(STD_OUTPUT_HANDLE);
     CONSOLE_SCREEN_BUFFER_INFO screen;
@@ -28,7 +29,7 @@ void Clear()
     SetConsoleCursorPosition(console, topLeft);
     #else
     std::cout << "\x1B[2J\x1B[H";
-    #endif
+    #endif*/
 }
 #endif
 time_t* timeseed = new time_t();
@@ -106,6 +107,7 @@ int main()
     system(" ");
     *consoleHandle = GetStdHandle(STD_OUTPUT_HANDLE);
     #endif
+    SetConsoleTitleA("teric v0.1");
     time(timeseed);
     *timestamp = time(0) / 60;
     temp = localtime(timeseed);
@@ -208,6 +210,7 @@ int main()
     std::string input;
     while (true)
     {
+        std::cout << "aids!eek";
         std::cout << dye::blue(*c.Username) << ": ";
         std::getline(std::cin, input);
         if (input.length() > 170)
@@ -237,9 +240,13 @@ int main()
                     PrintTime();
                     std::cout << dye::grey("Cleared the chat.\n");
                 }
-                else if (input == ".exit")
+                else if (input == ".exit") 
                 {
                     return 0;
+                }
+                else if (input == ".about")
+                {
+                    std::cout << dye::grey("teric v0.1\nAny issues, report to: Pixelated_Lagg#8321 on Discord");
                 }
                 else
                 {
@@ -249,7 +256,7 @@ int main()
             }
             else
             {
-                //std::cout << "\n";
+                SendMessageToChannel(*c.GuildID, *c.ChannelID, input, *c.Username);
             }
         }
         else
