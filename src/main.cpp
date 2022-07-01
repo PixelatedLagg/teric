@@ -147,7 +147,7 @@ int main()
             std::cin >> password;
             while (true)
             {
-                if (!TryLogin(username, password))
+                if (TryLogin(username, password))
                 {
                     TimeStamp();
                     std::cout << dye::red("Incorrect username and/or password.") << "\nEnter your full username. Example: CoolGuy#1849\n" << dye::blue(*c.Username) << ": ";
@@ -161,7 +161,6 @@ int main()
                     break;
                 }
             }
-            Login(username, password);
         }
         else
         {
@@ -242,6 +241,7 @@ int main()
                 }
                 else if (input == ".exit") 
                 {
+                    Logoff();
                     return 0;
                 }
                 else if (input == ".about")
@@ -256,7 +256,7 @@ int main()
             }
             else
             {
-                SendMessageToChannel(*c.GuildID, *c.ChannelID, input, *c.Username);
+                SendMessage(*c.GuildID, *c.ChannelID, input, *c.Username);
             }
         }
         else
