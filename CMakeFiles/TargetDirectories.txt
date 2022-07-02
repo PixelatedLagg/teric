@@ -1,3 +1,3 @@
-C:/Users/Michi/OneDrive/Desktop/teric/CMakeFiles/teric.dir
-C:/Users/Michi/OneDrive/Desktop/teric/CMakeFiles/edit_cache.dir
-C:/Users/Michi/OneDrive/Desktop/teric/CMakeFiles/rebuild_cache.dir
+C:/Users/pixil/Desktop/teric/CMakeFiles/teric.dir
+C:/Users/pixil/Desktop/teric/CMakeFiles/edit_cache.dir
+C:/Users/pixil/Desktop/teric/CMakeFiles/rebuild_cache.dir

@@ -14,22 +14,9 @@
 #include "include/colorconsole.hpp"
 
 #ifdef WINDOWS
-HANDLE* consoleHandle = new HANDLE();
 void Clear()
 {
     std::cout << "\x1B[2J\x1B[H";
-    /*#ifdef WINDOWS
-    COORD topLeft = { 0, 0 };
-    HANDLE console = GetStdHandle(STD_OUTPUT_HANDLE);
-    CONSOLE_SCREEN_BUFFER_INFO screen;
-    DWORD written;
-    GetConsoleScreenBufferInfo(console, &screen);
-    FillConsoleOutputCharacterA(console, ' ', screen.dwSize.X * screen.dwSize.Y, topLeft, &written);
-    FillConsoleOutputAttribute(console, FOREGROUND_GREEN | FOREGROUND_RED | FOREGROUND_BLUE, screen.dwSize.X * screen.dwSize.Y, topLeft, &written);
-    SetConsoleCursorPosition(console, topLeft);
-    #else
-    std::cout << "\x1B[2J\x1B[H";
-    #endif*/
 }
 #endif
 time_t* timeseed = new time_t();
@@ -105,7 +92,6 @@ int main()
 {
     #ifdef WINDOWS
     system(" ");
-    *consoleHandle = GetStdHandle(STD_OUTPUT_HANDLE);
     #endif
     SetConsoleTitleA("teric v0.1");
     time(timeseed);
@@ -147,7 +133,7 @@ int main()
             std::cin >> password;
             while (true)
             {
-                if (TryLogin(username, password))
+                if (TryLogin(username, password) < 1)
                 {
                     TimeStamp();
                     std::cout << dye::red("Incorrect username and/or password.") << "\nEnter your full username. Example: CoolGuy#1849\n" << dye::blue(*c.Username) << ": ";
@@ -200,6 +186,7 @@ int main()
             std::cout << "Create a nice and strong password.\n" << dye::blue(*c.Username) << ": ";
             std::cin >> password;
             CreateUser(username, password);
+            TryLogin(username, password);
             *c.Username = username;
         }
         Clear();
@@ -256,7 +243,7 @@ int main()
             }
             else
             {
-                SendMessage(*c.GuildID, *c.ChannelID, input, *c.Username);
+                SendMessageToChannel(*c.GuildID, *c.ChannelID, input, *c.Username);
             }
         }
         else

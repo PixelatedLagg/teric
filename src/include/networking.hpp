@@ -19,7 +19,7 @@ void LoginChannel();
 void LogoffChannel();
 void JoinGuild();
 void LeaveGuild();
-void SendMessage(unsigned long guildid, unsigned long channelid, std::string message, std::string username);
+void SendMessageToChannel(unsigned long guildid, unsigned long channelid, std::string message, std::string username);
 void DeleteUser();
 
 #endif

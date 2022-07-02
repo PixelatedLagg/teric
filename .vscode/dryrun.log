@@ -1,0 +1,45 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make: Entering directory 'c:/Users/pixil/Desktop/teric'
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:\Users\pixil\Desktop\teric -BC:\Users\pixil\Desktop\teric --check-build-system CMakeFiles\Makefile.cmake 0
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_start C:\Users\pixil\Desktop\teric\CMakeFiles C:\Users\pixil\Desktop\teric\\CMakeFiles\progress.marks
+C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe -s -f CMakeFiles\Makefile2 all
+ 
+make[1]: Entering directory 'c:/Users/pixil/Desktop/teric'
+C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe -s -f CMakeFiles\teric.dir\build.make CMakeFiles/teric.dir/depend
+ 
+make[2]: Entering directory 'c:/Users/pixil/Desktop/teric'
+ 
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_depends "MinGW Makefiles" C:\Users\pixil\Desktop\teric C:\Users\pixil\Desktop\teric C:\Users\pixil\Desktop\teric C:\Users\pixil\Desktop\teric C:\Users\pixil\Desktop\teric\CMakeFiles\teric.dir\DependInfo.cmake --color=
+make[2]: Leaving directory 'c:/Users/pixil/Desktop/teric'
+ 
+C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe -s -f CMakeFiles\teric.dir\build.make CMakeFiles/teric.dir/build
+ 
+make[2]: Entering directory 'c:/Users/pixil/Desktop/teric'
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_echo_color --switch= --green --progress-dir=C:\Users\pixil\Desktop\teric\CMakeFiles --progress-num=1 "Building CXX object CMakeFiles/teric.dir/src/context.cpp.obj"
+ 
+C:\MinGW\bin\g++.exe  @CMakeFiles/teric.dir/includes_CXX.rsp  -MD -MT CMakeFiles/teric.dir/src/context.cpp.obj -MF CMakeFiles\teric.dir\src\context.cpp.obj.d -o CMakeFiles\teric.dir\src\context.cpp.obj -c C:\Users\pixil\Desktop\teric\src\context.cpp
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_echo_color --switch= --green --progress-dir=C:\Users\pixil\Desktop\teric\CMakeFiles --progress-num=2 "Building CXX object CMakeFiles/teric.dir/src/guild.cpp.obj"
+C:\MinGW\bin\g++.exe  @CMakeFiles/teric.dir/includes_CXX.rsp  -MD -MT CMakeFiles/teric.dir/src/guild.cpp.obj -MF CMakeFiles\teric.dir\src\guild.cpp.obj.d -o CMakeFiles\teric.dir\src\guild.cpp.obj -c C:\Users\pixil\Desktop\teric\src\guild.cpp
+ 
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_echo_color --switch= --green --progress-dir=C:\Users\pixil\Desktop\teric\CMakeFiles --progress-num=3 "Building CXX object CMakeFiles/teric.dir/src/main.cpp.obj"
+C:\MinGW\bin\g++.exe  @CMakeFiles/teric.dir/includes_CXX.rsp  -MD -MT CMakeFiles/teric.dir/src/main.cpp.obj -MF CMakeFiles\teric.dir\src\main.cpp.obj.d -o CMakeFiles\teric.dir\src\main.cpp.obj -c C:\Users\pixil\Desktop\teric\src\main.cpp
+ 
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_echo_color --switch= --green --progress-dir=C:\Users\pixil\Desktop\teric\CMakeFiles --progress-num=4 "Building CXX object CMakeFiles/teric.dir/src/message.cpp.obj"
+C:\MinGW\bin\g++.exe  @CMakeFiles/teric.dir/includes_CXX.rsp  -MD -MT CMakeFiles/teric.dir/src/message.cpp.obj -MF CMakeFiles\teric.dir\src\message.cpp.obj.d -o CMakeFiles\teric.dir\src\message.cpp.obj -c C:\Users\pixil\Desktop\teric\src\message.cpp
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_echo_color --switch= --green --progress-dir=C:\Users\pixil\Desktop\teric\CMakeFiles --progress-num=5 "Building CXX object CMakeFiles/teric.dir/src/networking.cpp.obj"
+C:\MinGW\bin\g++.exe  @CMakeFiles/teric.dir/includes_CXX.rsp  -MD -MT CMakeFiles/teric.dir/src/networking.cpp.obj -MF CMakeFiles\teric.dir\src\networking.cpp.obj.d -o CMakeFiles\teric.dir\src\networking.cpp.obj -c C:\Users\pixil\Desktop\teric\src\networking.cpp
+ 
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_echo_color --switch= --green --progress-dir=C:\Users\pixil\Desktop\teric\CMakeFiles --progress-num=6 "Building CXX object CMakeFiles/teric.dir/src/user.cpp.obj"
+C:\MinGW\bin\g++.exe  @CMakeFiles/teric.dir/includes_CXX.rsp  -MD -MT CMakeFiles/teric.dir/src/user.cpp.obj -MF CMakeFiles\teric.dir\src\user.cpp.obj.d -o CMakeFiles\teric.dir\src\user.cpp.obj -c C:\Users\pixil\Desktop\teric\src\user.cpp
+ 
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_echo_color --switch= --green --bold --progress-dir=C:\Users\pixil\Desktop\teric\CMakeFiles --progress-num=7 "Linking CXX executable teric.exe"
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\teric.dir\link.txt --verbose=
+make[2]: Leaving directory 'c:/Users/pixil/Desktop/teric'
+ 
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_echo_color --switch= --progress-dir=C:\Users\pixil\Desktop\teric\CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target teric"
+make[1]: Leaving directory 'c:/Users/pixil/Desktop/teric'
+ 
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_start C:\Users\pixil\Desktop\teric\CMakeFiles 0
+ 
+make: Leaving directory 'c:/Users/pixil/Desktop/teric'
+ 
