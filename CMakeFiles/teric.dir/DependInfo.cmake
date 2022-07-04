@@ -8,12 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/pixil/Desktop/teric/src/context.cpp" "CMakeFiles/teric.dir/src/context.cpp.obj" "gcc" "CMakeFiles/teric.dir/src/context.cpp.obj.d"
-  "C:/Users/pixil/Desktop/teric/src/guild.cpp" "CMakeFiles/teric.dir/src/guild.cpp.obj" "gcc" "CMakeFiles/teric.dir/src/guild.cpp.obj.d"
+  "C:/Users/pixil/Desktop/teric/src/client.cpp" "CMakeFiles/teric.dir/src/client.cpp.obj" "gcc" "CMakeFiles/teric.dir/src/client.cpp.obj.d"
   "C:/Users/pixil/Desktop/teric/src/main.cpp" "CMakeFiles/teric.dir/src/main.cpp.obj" "gcc" "CMakeFiles/teric.dir/src/main.cpp.obj.d"
-  "C:/Users/pixil/Desktop/teric/src/message.cpp" "CMakeFiles/teric.dir/src/message.cpp.obj" "gcc" "CMakeFiles/teric.dir/src/message.cpp.obj.d"
-  "C:/Users/pixil/Desktop/teric/src/networking.cpp" "CMakeFiles/teric.dir/src/networking.cpp.obj" "gcc" "CMakeFiles/teric.dir/src/networking.cpp.obj.d"
-  "C:/Users/pixil/Desktop/teric/src/user.cpp" "CMakeFiles/teric.dir/src/user.cpp.obj" "gcc" "CMakeFiles/teric.dir/src/user.cpp.obj.d"
+  "C:/Users/pixil/Desktop/teric/src/socket.cpp" "CMakeFiles/teric.dir/src/socket.cpp.obj" "gcc" "CMakeFiles/teric.dir/src/socket.cpp.obj.d"
   )
 
 # Targets to which this target links.

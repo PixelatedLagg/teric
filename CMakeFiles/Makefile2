@@ -80,12 +80,12 @@ clean: CMakeFiles/teric.dir/clean
 CMakeFiles/teric.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\teric.dir\build.make CMakeFiles/teric.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\teric.dir\build.make CMakeFiles/teric.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\pixil\Desktop\teric\CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target teric"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\pixil\Desktop\teric\CMakeFiles --progress-num=1,2,3,4 "Built target teric"
 .PHONY : CMakeFiles/teric.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/teric.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\pixil\Desktop\teric\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\pixil\Desktop\teric\CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/teric.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\pixil\Desktop\teric\CMakeFiles 0
 .PHONY : CMakeFiles/teric.dir/rule

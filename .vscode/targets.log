@@ -7,10 +7,12 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Fri Jul 01 20:16:59 2022
+# Make data base, printed on Sun Jul 03 21:57:41 2022
 
 # Variables
 
+# environment
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
 SYSTEMDRIVE = C:
 # environment
@@ -28,20 +30,22 @@ SYSTEMROOT = C:\Windows
 # environment
 PROCESSOR_LEVEL = 23
 # environment
-PSMODULEPATH = C:\Program Files\WindowsPowerShe 
-ll\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
 # default
 MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_13172_UPYEMJBDAZBLRQHB
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_6820_BGMTTOGTVLNFHMDK
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
 .VARIABLES := 
 # automatic
-%D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
+%D = $(pa 
+tsubst %/,%,$(patsubst %\,%,$(dir $%)))
 # automatic
 ^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
 # automatic
@@ -87,7 +91,7 @@ CMAKE_BINARY_DIR = C:\Users\pixil\Desktop\teric
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 13172
+VSCODE_PID = 6820
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # makefile (from 'Makefile', line 59)
@@ -193,8 +197,7 @@ VSCODE_IPC_HOOK = \\.\pipe\4d2c30b9729253ba5a57497a15c49282-1.69.0-insider-main-
 # default
 .RECIPEPREFIX := 
 # automatic
-<F = $ 
-(notdir $<)
+<F = $(notdir $<)
 # default
 SUFFIXES := 
 # environment
@@ -206,12 +209,12 @@ SESSIONNAME = Console
 # environment
 PROCESSOR_REVISION = 0101
 # environment
-PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 1 Stepping 1, AuthenticAMD
+PROCESSOR_IDENTIFIER = AMD64 Family 23  
+Model 1 Stepping 1, AuthenticAMD
 # variable set hash-table stats:
-# Load=97/1024=9%, Rehash=0, Collisions=8/132=6%
+# Load=99/1024=10%, Rehash=0, Collisions=9/134=7%
 
-# P 
-attern-specific Variable Values
+# Pattern-specific Variable Values
 
 # No pattern-specific variable values.
 
@@ -219,7 +222,7 @@ attern-specific Variable Values
 
 # RCS: could not be stat'd.
 # SCCS: could not be stat'd.
-# . (key c:/Users/pixil/Desktop/teric, mtime 1656721017): 15 files, no impossibilities.
+# . (key c:/Users/pixil/Desktop/teric, mtime 1656721036): 15 files, no impossibilities.
 
 # 15 files, no impossibilities in 3 directories.
 
@@ -253,7 +256,8 @@ src/main.cpp.i:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 192):
+#  recipe to exe 
+cute (from 'Makefile', line 192):
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\teric.dir\build.make CMakeFiles/teric.dir/src/main.cpp.i
 
 src/main.i: src/main.cpp.i
@@ -709,12 +713,12 @@ src/guild.cpp.s:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 82 / storage = 1040 B / avg = 12 B
-# current buf: size = 8174 B / used = 1040 B / count = 82 / avg = 12 B
+# strcache buffers: 1 (0) / strings = 82 / storage = 1047 B / avg = 12 B
+# current buf: size = 8174 B / used = 1047 B / count = 82 / avg = 12 B
 
 # strcache performance: lookups = 330 / hit rate = 75%
 # hash-table stats:
 # Load=82/8192=1%, Rehash=0, Collisions=0/330=0%
-# Finished Make data base on Fri Jul 01 20:16:59 2022
+# Finished Make data base on Sun Jul 03 21:57:41 2022
 
  
